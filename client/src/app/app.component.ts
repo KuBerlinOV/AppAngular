@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  name: string = '';
+  page: string = "recipes";
+  onNavBtnClicked(page: string) {
+    this.page = page
+  }
 }
