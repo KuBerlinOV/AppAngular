@@ -1,6 +1,6 @@
-<div class="row" appBasicHighlight [defaultColor]="'yellow'" [highlightColor]="'green'">
+<div class="row" >
     <div class="col-xs-10">
-        <app-shopping-edit (onAddedItem)="onAddedItem($event)"></app-shopping-edit>
+        <app-shopping-edit></app-shopping-edit>
         <hr>
         <ul class="list-group">
             <a [ngClass]="{onion: ingredient.name === 'onion'}" href="" style="cursor: pointer;" class="list-group-item"

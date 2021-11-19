@@ -2,7 +2,7 @@
     <div class="col-md-5">
         <!-- here we are assigning the selectedRecipe property 
             to recipe passed through recipeWasSelected event emmiter -->
-        <app-recipe-list (recipeWasSelected)="selectedRecipe = $event"></app-recipe-list>
+        <app-recipe-list ></app-recipe-list>
     </div>
     <div class="col-md-7">
         <app-recipe-detail *ngIf="selectedRecipe; else infoText" [recipe]="selectedRecipe">
